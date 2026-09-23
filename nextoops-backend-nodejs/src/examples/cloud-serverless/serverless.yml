@@ -1,0 +1,36 @@
+service: yozen-backend-serverless
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: us-east-1
+  environment:
+    NODE_ENV: production
+
+functions:
+  main:
+    handler: src/examples/cloud-serverless/lambda-handler.handler # Entry point for Lambda
+    events:
+      - http:
+          method: POST
+      - http:
+          path: '{proxy+}'
+          method: POST
+  hello:
+    handler: src/examples/cloud-serverless/lambda-handler.handler
+    events:
+      - http:
+          path: hello
+          method: get
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
+
+# Resource definition for AWS Cloud Environment
+resources:
+  Resources:
+    YozenS3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: yozen-assets-bucket

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: build
+    env_file:
+      - stack.env
+    ports:
+      - "8080:3000" # Adjust based on your app's port
+    environment:
+      - NODE_ENV=production # Example environment variable
+    restart: unless-stopped

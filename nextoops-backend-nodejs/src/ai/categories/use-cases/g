@@ -1,0 +1,58 @@
+  // 👇 Add this manually for testing via Postman
+  @Get('test-insights')
+  async testInsights() {
+    return this.taskSchedulingService.insightsNightlyCron();
+  }
+}
+✅ This gives you a manual REST endpoint:
+
+bash
+Copy code
+GET /task-scheduling/test-insights
+🧪 2. Start your NestJS backend
+bash
+Copy code
+npm run start:dev
+Ensure your Redis and DB are running too.
+
+📬 3. Test in Postman
+Request:
+
+Method: GET
+
+URL: http://localhost:3000/task-scheduling/test-insights
+
+Headers:
+
+Content-Type: application/json
+
+Add your Authorization: Bearer <token> if your global guards require auth.
+
+💡 4. What happens under the hood
+When you hit that endpoint:
+
+TaskSchedulingController.testInsights() calls
+TaskSchedulingService.insightsNightlyCron().
+
+That method:
+
+Checks timezone offsets whose local time ≈ 02:10 AM.
+
+For each offset bucket:
+
+Calls _stepThreeDays() → aggregates entries for each user.
+
+Calls _stepWeekly() → aggregates 3-day segments into weekly.
+
+Calls _stepMonthly() → aggregates weekly into monthly.
+
+Each aggregation writes into your aggregated_insight table using
+the AggregatedInsightsService.upsertThreeDays() and upsertRollup() methods.
+
+You’ll see console logs like:
+
+sql
+Copy code
+[Nest] 10923  - 11/04/2025, 22:10:00  TaskSchedulingService  INFO  nightly run started
+processing offset +01:00 ...
+finished offset +01:00 (45 users)

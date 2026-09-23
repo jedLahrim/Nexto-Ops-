@@ -1,0 +1,53 @@
+{
+  "schemaTasks": [
+    {
+      "name": "Focus on '@name'",
+      "localeKey": "focus_on",
+      "type": "FOCUS_INSIGHT",
+      "key": "get_started_focus_on",
+      "nextSchemaKey": "understand_your_child_more",
+      "generateSubtaskBasedOnTaskType": true
+    },
+    {
+      "name": "Understand Your child more",
+      "localeKey": "understand_your_child_more",
+      "status": "TODO",
+      "type": "OBJECTIVE",
+      "key": "understand_your_child_more",
+      "nextSchemaKey": "set_2nd_focus",
+      "subTasks": [
+        {
+          "name": "Add details child behaviour",
+          "localeKey": "add_details_child_behaviour",
+          "type": "ADD_DETAILS_CHILD_BEHAVIOUR",
+          "skippable": true
+        },
+        {
+          "name": "Setup your next Focus",
+          "localeKey": "set_next_focus",
+          "type": "SET_NEXT_FOCUS_INSIGHT",
+          "enableWhenAllSiblingTasksCompleted": true
+        }
+      ]
+    },
+    {
+      "name": "Focus on '@name'",
+      "localeKey": "focus_on",
+      "type": "FOCUS_INSIGHT",
+      "status": "IN_PROGRESS",
+      "key": "set_2nd_focus",
+      "nextSchemaKey": "set_new_focus",
+      "generateSubtaskBasedOnTaskType": true
+    },
+    {
+      "name": "Focus on '@name'",
+      "localeKey": "focus_on",
+      "type": "FOCUS_INSIGHT",
+      "status": "TODO",
+      "key": "set_new_focus",
+      "nextSchemaKey": "set_new_focus",
+      "recurringCount": 5,
+      "generateSubtaskBasedOnTaskType": true
+    }
+  ]
+}

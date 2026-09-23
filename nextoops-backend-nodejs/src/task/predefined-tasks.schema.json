@@ -1,0 +1,25 @@
+{
+  "schemaTasks": [
+    {
+      "name": "Focus on '@name'",
+      "localeKey": "focus_on",
+      "type": "FOCUS_INSIGHT",
+      "status": "IN_PROGRESS",
+      "key": "set_2nd_focus",
+      "nextSchemaKey": "set_new_focus",
+      "predefinedTrackingCount": 3,
+      "generateSubtaskBasedOnTaskType": true
+    },
+    {
+      "name": "Focus on '@name'",
+      "localeKey": "focus_on",
+      "type": "FOCUS_INSIGHT",
+      "status": "IN_PROGRESS",
+      "key": "set_new_focus",
+      "nextSchemaKey": "set_new_focus",
+      "recurringCount": 5,
+      "predefinedTrackingCount": 4,
+      "generateSubtaskBasedOnTaskType": true
+    }
+  ]
+}
