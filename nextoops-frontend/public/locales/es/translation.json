@@ -1,0 +1,48 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error.",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "done": "Hecho"
+  },
+  "auth": {
+    "title": "NextoOps — ERP de Gestión TI",
+    "subtitle": "Inicie sesión para administrar activos, tickets, existencias, salas y adquisiciones. Las cuentas son emitidas por su administrador de TI.",
+    "username_label": "Nombre de usuario o correo electrónico",
+    "username_placeholder": "j.cooper o nombre@ejemplo.com",
+    "password_label": "Contraseña",
+    "password_placeholder": "Su contraseña (o PIN de 6 dígitos)",
+    "sign_in_button": "Iniciar sesión",
+    "signing_in": "Iniciando sesión…",
+    "tab_password": "Contraseña",
+    "tab_email_code": "Código por correo",
+    "email_label": "Correo electrónico",
+    "email_placeholder": "nombre@ejemplo.com",
+    "send_code_button": "Envíame un código",
+    "sending_code": "Enviando…",
+    "no_account": "¿No tiene una cuenta?",
+    "request_access": "Solicitar acceso",
+    "request_access_desc": "Su correo se verifica mediante un código, luego un administrador aprueba su cuenta.",
+    "footer_note": "Solo inicio de sesión · Las contraseñas se almacenan como hash salados · Todos los cambios se registran",
+    
+    "req_name": "Su nombre",
+    "req_name_placeholder": "ej. Jane Cooper",
+    "req_email": "Correo del trabajo *",
+    "req_email_placeholder": "nombre@escuela.edu",
+    "req_dept": "Departamento / rol (opcional)",
+    "req_dept_placeholder": "ej. Matemáticas — profesor",
+    "req_submit": "Envíame un código de verificación",
+    "req_back": "Volver a inicio de sesión",
+    
+    "verify_title": "Revise su correo electrónico",
+    "verify_subtitle": "Hemos enviado un código de 6 dígitos a {{email}}. Introdúzcalo para confirmar su solicitud.",
+    "verify_confirm": "Confirmar código",
+    "verify_different_email": "Usar un correo electrónico diferente",
+    
+    "waiting_title": "Solicitud enviada para aprobación",
+    "waiting_subtitle": "Su correo está verificado. Su solicitud ahora espera la aprobación de un administrador de TI. Una vez aprobada, iniciará sesión con el nombre de usuario y la contraseña que se le asignen."
+  }
+}

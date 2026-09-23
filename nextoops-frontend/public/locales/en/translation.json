@@ -1,0 +1,48 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred.",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "done": "Done"
+  },
+  "auth": {
+    "title": "NextoOps — IT Management ERP",
+    "subtitle": "Sign in to manage assets, tickets, stock, rooms and procurement. Accounts are issued by your IT administrator.",
+    "username_label": "Username or email",
+    "username_placeholder": "j.cooper or name@example.com — both work",
+    "password_label": "Password",
+    "password_placeholder": "Your password (or 6-digit PIN)",
+    "sign_in_button": "Sign in",
+    "signing_in": "Signing in…",
+    "tab_password": "Password",
+    "tab_email_code": "Email code",
+    "email_label": "Email",
+    "email_placeholder": "name@example.com",
+    "send_code_button": "Email me a code",
+    "sending_code": "Sending…",
+    "no_account": "Don't have an account?",
+    "request_access": "Request access",
+    "request_access_desc": "Your email is verified by code, then an IT admin approves your account.",
+    "footer_note": "Sign-in only · Passwords stored as salted hashes · All changes are audit-logged",
+    
+    "req_name": "Your name",
+    "req_name_placeholder": "e.g. Jane Cooper",
+    "req_email": "Work email *",
+    "req_email_placeholder": "name@school.edu",
+    "req_dept": "Department / role (optional)",
+    "req_dept_placeholder": "e.g. Mathematics — teacher",
+    "req_submit": "Email me a verification code",
+    "req_back": "Back to sign in",
+    
+    "verify_title": "Check your email",
+    "verify_subtitle": "We sent a 6-digit code to {{email}}. Enter it to confirm your request.",
+    "verify_confirm": "Confirm code",
+    "verify_different_email": "Use a different email",
+    
+    "waiting_title": "Request sent for approval",
+    "waiting_subtitle": "Your email is verified. Your request is now waiting for an IT administrator to approve it. Once approved you'll sign in with the username and 6-digit password they issue."
+  }
+}

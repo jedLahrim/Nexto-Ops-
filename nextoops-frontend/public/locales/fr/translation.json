@@ -1,0 +1,48 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite.",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "done": "Terminé"
+  },
+  "auth": {
+    "title": "NextoOps — ERP de gestion informatique",
+    "subtitle": "Connectez-vous pour gérer les actifs, les tickets, le stock, les salles et les achats. Les comptes sont délivrés par votre administrateur informatique.",
+    "username_label": "Nom d'utilisateur ou e-mail",
+    "username_placeholder": "j.cooper ou nom@exemple.com",
+    "password_label": "Mot de passe",
+    "password_placeholder": "Votre mot de passe (ou code PIN à 6 chiffres)",
+    "sign_in_button": "Se connecter",
+    "signing_in": "Connexion en cours…",
+    "tab_password": "Mot de passe",
+    "tab_email_code": "Code par e-mail",
+    "email_label": "E-mail",
+    "email_placeholder": "nom@exemple.com",
+    "send_code_button": "Envoyez-moi un code",
+    "sending_code": "Envoi en cours…",
+    "no_account": "Vous n'avez pas de compte ?",
+    "request_access": "Demander l'accès",
+    "request_access_desc": "Votre e-mail est vérifié par un code, puis un administrateur approuve votre compte.",
+    "footer_note": "Connexion uniquement · Les mots de passe sont stockés sous forme de hachages salés · Toutes les modifications sont enregistrées",
+    
+    "req_name": "Votre nom",
+    "req_name_placeholder": "ex. Jane Cooper",
+    "req_email": "E-mail professionnel *",
+    "req_email_placeholder": "nom@ecole.edu",
+    "req_dept": "Département / rôle (facultatif)",
+    "req_dept_placeholder": "ex. Mathématiques — professeur",
+    "req_submit": "Envoyez-moi un code de vérification",
+    "req_back": "Retour à la connexion",
+    
+    "verify_title": "Vérifiez votre e-mail",
+    "verify_subtitle": "Nous avons envoyé un code à 6 chiffres à {{email}}. Saisissez-le pour confirmer votre demande.",
+    "verify_confirm": "Confirmer le code",
+    "verify_different_email": "Utiliser une autre adresse e-mail",
+    
+    "waiting_title": "Demande envoyée pour approbation",
+    "waiting_subtitle": "Votre e-mail est vérifié. Votre demande attend maintenant l'approbation d'un administrateur. Une fois approuvée, vous vous connecterez avec le nom d'utilisateur et le mot de passe qui vous seront attribués."
+  }
+}
